@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stemline — Support</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5f5f66;
+    --rule: #e4e4e8;
+    --accent: #c8622a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0c0c0d; --fg:#f2f2f4; --muted:#9a9aa2; --rule:#26262a; --accent:#f0934f; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 2rem; letter-spacing: -0.02em; margin: 0 0 .25rem; }
+  .tag { color: var(--muted); margin: 0 0 3rem; }
+  h2 { font-size: 1.05rem; letter-spacing: .02em; text-transform: uppercase;
+       color: var(--muted); margin: 2.75rem 0 .75rem; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--accent); }
+  ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: .5rem; }
+  .card { border: 1px solid var(--rule); border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem; }
+  .card h3 { margin: 0 0 .4rem; font-size: 1rem; }
+  .card p { margin: 0; color: var(--muted); }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Stemline</h1>
+  <p class="tag">Split a song you own into four faders. Support and contact.</p>
+
+  <h2>Contact</h2>
+  <p>Questions, bugs, or feedback: <a href="mailto:bramraysky232@gmail.com">bramraysky232@gmail.com</a>. Include your iPhone model and iOS version, and it will be answered as soon as possible.</p>
+
+  <h2>What Stemline does</h2>
+  <p>You import an audio file already on your device. Stemline separates it into drums, bass, vocals, and everything else, then gives each part its own volume fader. Pull the vocals down to sing over the track, or pull an instrument down and play that part yourself.</p>
+  <p>The separation runs entirely on your iPhone. Your audio is never uploaded, no account is required, and the app works with no connection.</p>
+
+  <h2>Common questions</h2>
+
+  <div class="card">
+    <h3>Where do songs come from?</h3>
+    <p>You supply them. Stemline has no catalog and no store — it does not search, stream, or download anything, and it cannot open DRM-protected tracks such as Apple Music or Spotify downloads. Import files you own or otherwise have the right to use.</p>
+  </div>
+
+  <div class="card">
+    <h3>Why is the first split slow?</h3>
+    <p>The machine learning model compiles itself for your specific iPhone the first time it runs. That happens once. Later splits are considerably faster.</p>
+  </div>
+
+  <div class="card">
+    <h3>A split failed or the app quit partway through</h3>
+    <p>Separation is memory-hungry. Close other apps and try again, and try a shorter file to confirm. If it keeps failing, email the details above with the track length and your iPhone model.</p>
+  </div>
+
+  <div class="card">
+    <h3>I can still hear a little vocal in the backing</h3>
+    <p>Expected. Separation is very good, not perfect — some bleed between parts is normal, and loud, dense mixes are the hardest. Stemline is built for practising and singing along, not for release-quality remixing.</p>
+  </div>
+
+  <div class="card">
+    <h3>A fader says a part is missing</h3>
+    <p>Some songs genuinely have no bass or no vocal. Stemline shows those parts as empty rather than pretending there is something to fade.</p>
+  </div>
+
+  <div class="card">
+    <h3>Can I export or share the separated parts?</h3>
+    <p>Separated parts are derivative works of the original recording. Keep them for your own practice rather than distributing them.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>Stemline collects nothing. No analytics, no tracking, no account, and no network use by the app itself. Your audio and the stems made from it stay on your device.</p>
+
+  <h2>Credits</h2>
+  <p>Separation uses Demucs by Meta AI Research, converted to Core ML. Demucs is released under the MIT license; the full notice appears in the app under About.</p>
+
+  <footer>
+    <p>Copyright 2026 Bram Raiskay Chandra</p>
+  </footer>
+
+</div>
+</body>
+</html>
